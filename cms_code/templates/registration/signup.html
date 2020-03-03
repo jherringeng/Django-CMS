@@ -1,0 +1,19 @@
+
+  {% extends 'base.html' %}
+
+  {% block head %}
+
+      <title>Tweeter</title>
+
+  {% endblock %}
+
+  {% block body %}
+
+  <h2>Sign up</h2>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Sign up</button>
+    </form>
+
+  {% endblock %}

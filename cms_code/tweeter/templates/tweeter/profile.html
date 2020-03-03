@@ -1,0 +1,35 @@
+{% extends 'tweeter/base.html' %}
+
+{% block head %}
+
+    <title>Profile</title>
+
+{% endblock %}
+
+{% block body %}
+
+<div class = "row">
+
+  <div class="col-sm-3 fixed">
+
+    <div class="card ">
+      <div class="card-header">
+        {{ user_profile.user }}
+      </div>
+      <div class="card-body">
+        <p class="card-text">{{ user_profile.profile_text }}</p>
+        <p class="card-text">Breed: {{ user_profile.breed }}</p>
+        <p class="card-text">Gender: {{ user_profile.sex }}</p>
+
+      </div>
+      {% if user_profile == user.username %}
+      <div class="card-footer text-muted">
+        <a href="#" class="btn btn-primary">Edit Profile</a>
+      </div>
+      {% endif %}
+    </div>
+
+  </div>
+
+</div>
+{% endblock %}

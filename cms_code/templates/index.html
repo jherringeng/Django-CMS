@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+    <title>Tweeter</title>
+
+
+{% endblock %}
+
+{% block body %}
+
+  {% load static %}
+
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to Tweeter!</h1>
+        <p class="lead">Use tweeter to upload all your bird pictures and comments about birds!</p>
+        <hr class="my-4">
+        <p>We love birds! They're so tasty! Also mice and other small edible creatures. </p>
+        <div class="row">
+            <a class="btn btn-primary btn-lg" href="/accounts/login" role="button">Login</a>
+            <a class="btn btn-primary btn-lg ml-2" href="/accounts/signup" role="button">Sign up</a>
+        </div>
+    </div>
+
+    <div class="card-group">
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
